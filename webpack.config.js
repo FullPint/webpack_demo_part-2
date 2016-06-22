@@ -23,5 +23,10 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ],
+  module: {
+        loaders: [
+            { test: /\.css$/, loader: "style!css" }
+        ]
+    }
 };
