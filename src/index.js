@@ -1,7 +1,16 @@
-var helloTest = require('./helloTest');
-require("./style.css");
+import React from 'react'
+import ReactDOM from 'react-dom'
+import HelloTest from './helloTest'
+import './style.css'
 
-const app = document.createElement('div');
+class App extends React.Component {
+  render () {
+    return (
+      <div className="wrapper">
+        <HelloTest />
+      </div>
+    )
+  }
+}
 
-document.body.appendChild(app);
-app.appendChild(helloTest());
+ReactDOM.render(<App />, document.getElementById('app'))

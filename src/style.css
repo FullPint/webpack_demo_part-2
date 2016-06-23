@@ -2,10 +2,10 @@ body {
   background-color: red;
 }
 
-h1 {
+.hello-test {
   color: white;
 }
 
-p {
-  color: blue;
+.now-message {
+  color: blue
 }

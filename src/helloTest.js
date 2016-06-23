@@ -1,8 +1,13 @@
-var nowMesssage = require('./nowMessage')
+import React from 'react'
+import NowMessage from './nowMessage'
 
-module.exports = function () {
-  const helloMesssage = document.createElement('h1');
-  helloMesssage.innerHTML = "Test: Hello World!";
-  helloMesssage.appendChild(nowMesssage());
-  return helloMesssage;
-};
+class HelloTest extends React.Component {
+  render () {
+    return (
+      <div>
+        <h1 className="hello-test"> Test: Hello World </h1>
+        <NowMessage />
+      </div>
+    ) }
+}
+export default HelloTest
